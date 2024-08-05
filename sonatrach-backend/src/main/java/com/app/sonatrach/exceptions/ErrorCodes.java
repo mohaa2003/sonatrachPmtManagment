@@ -1,0 +1,32 @@
+package com.app.sonatrach.exceptions;
+
+public enum ErrorCodes {
+    ACTIVITY_NOT_FOUND(1000),
+    ACTIVITY_NOT_VALID(1001),
+    CSP_NOT_FOUND(2000),
+    CSP_NOT_VALID(2001),
+    DIOLOMAT_NOT_FOUND(3000),
+    DIOLOMAT_NOT_VALID(3001),
+    EMPLOYE_NOT_FOUND(4000),
+    EMPLOYE_NOT_VALID(4001),
+    FONCTIONALITY_NOT_FOUND(5000),
+    FONCTIONALITY_NOT_VALID(5001),
+    PMT_NOT_FOUND(6000),
+    PMT_NOT_VALID(6001),
+    PREVISION_DEPART_NOT_FOUND(7000),
+    PREVISION_DEPART_NOT_VALID(7001),
+    PREVISION_RECRUTMENT_NOT_FOUND(8000),
+    PREVISION_RECRUTMENT_NOT_VALID(8001),
+    PROFIL_NOT_FOUND(9000),
+    PROFIL_NOT_VALID(9001);
+
+    private int code;
+    ErrorCodes(int code){
+        this.code = code;
+    }
+
+    public int getCode(){
+        return code;
+    }
+
+}
